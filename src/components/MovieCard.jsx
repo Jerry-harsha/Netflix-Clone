@@ -26,7 +26,11 @@ const MovieCard = ({ movie }) => {
 
   return (
     <div className="relative m-2 inline-block w-[160px] cursor-pointer overflow-hidden rounded-lg sm:w-[200px] md:w-[240px] lg:w-[280px]">
-      <img src={createImageUrl(backdrop_path, "w500")} alt={title} />
+      <img
+        className="block h-40 w-full object-cover object-top"
+        src={createImageUrl(backdrop_path ?? poster_path, "w500")}
+        alt={title}
+      />
       <div className="absolute top-0 left-0 h-full w-full bg-black/80 opacity-0 hover:opacity-100">
         <p className="font-nsans-bold flex h-full items-center justify-center text-xs whitespace-normal md:text-sm">
           {title}
