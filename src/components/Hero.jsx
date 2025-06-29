@@ -32,7 +32,7 @@ const Hero = () => {
         />
         <div className="absolute top-[10%] w-full p-4 md:p-8 lg:top-[25%]">
           <h1 className="font-nsans-bold text-3xl md:text-6xl">{title}</h1>
-          <div className="mt-8 mb-4">
+          <div className="mt-8 mb-4 space-x-2">
             <button className="mb-4 border bg-gray-300 px-5 py-2 text-black capitalize">
               play
             </button>
